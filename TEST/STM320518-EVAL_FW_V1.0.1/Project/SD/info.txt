@@ -1,0 +1,26 @@
+This application assumes that the .WAV file to be played has the following format:
+Audio Format: PCM (an uncompressed wave data format in which each value
+represents the amplitude of the signal at the time of sampling)
+Sample rate: 22050 Hz     //may be 8000, 11025, 22050 or 44100 Hz
+Bits Per Sample: 8-bit (Audio sample data values are in the range [0-255])
+Number of Channels: 1 (Mono)  
+
+
+1sec - 22kb
+
+
+pistole
+2x
+samopal
+2x
+puska
+2x
+granatomet
+1x
+
+tesne
+zasah
+smrt
+nova hra 
+konec hry
+pipnuti

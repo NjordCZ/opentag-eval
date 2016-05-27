@@ -1,0 +1,695 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.50.3.4676/W32 for ARM               28/Feb/2016  23:24:48 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Exe #
+#                    \STM32F0518-EVAL.out                                     #
+#    Map file     =  D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Lis #
+#                    t\STM32F0518-EVAL.map                                    #
+#    Command line =  D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \HD44780LIB.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518- #
+#                    EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518-EV #
+#                    AL-CONFIG1\Obj\diskio.o D:\vyvoj\STM\STM32F051R8T6\TEST\ #
+#                    STM320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\ST #
+#                    M320518-EVAL-CONFIG1\Obj\ff.o                            #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \i2c_ssd1306.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518 #
+#                    -EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518-E #
+#                    VAL-CONFIG1\Obj\io.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM #
+#                    320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM32 #
+#                    0518-EVAL-CONFIG1\Obj\ir_lasertag.o                      #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \lasertag.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EV #
+#                    AL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518-EVAL #
+#                    -CONFIG1\Obj\lcd_fonts.o D:\vyvoj\STM\STM32F051R8T6\TEST #
+#                    \STM320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\S #
+#                    TM320518-EVAL-CONFIG1\Obj\main.o                         #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \startup_stm32f0xx.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM #
+#                    320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM32 #
+#                    0518-EVAL-CONFIG1\Obj\stm320518_eval.o                   #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm320518_eval_cec.o D:\vyvoj\STM\STM32F051R8T6\TEST\ST #
+#                    M320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM3 #
+#                    20518-EVAL-CONFIG1\Obj\stm320518_eval_i2c_ee.o           #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm320518_eval_i2c_tsensor.o                            #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm320518_eval_spi_sd.o D:\vyvoj\STM\STM32F051R8T6\TEST #
+#                    \STM320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\S #
+#                    TM320518-EVAL-CONFIG1\Obj\stm32f0xx_adc.o                #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_cec.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM3205 #
+#                    18-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518 #
+#                    -EVAL-CONFIG1\Obj\stm32f0xx_comp.o                       #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_crc.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM3205 #
+#                    18-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518 #
+#                    -EVAL-CONFIG1\Obj\stm32f0xx_dac.o                        #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_dbgmcu.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM3 #
+#                    20518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320 #
+#                    518-EVAL-CONFIG1\Obj\stm32f0xx_dma.o                     #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_exti.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM320 #
+#                    518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM32051 #
+#                    8-EVAL-CONFIG1\Obj\stm32f0xx_flash.o                     #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_gpio.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM320 #
+#                    518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM32051 #
+#                    8-EVAL-CONFIG1\Obj\stm32f0xx_i2c.o                       #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_it.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM32051 #
+#                    8-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518- #
+#                    EVAL-CONFIG1\Obj\stm32f0xx_iwdg.o                        #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_misc.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM320 #
+#                    518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM32051 #
+#                    8-EVAL-CONFIG1\Obj\stm32f0xx_pwr.o                       #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_rcc.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM3205 #
+#                    18-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518 #
+#                    -EVAL-CONFIG1\Obj\stm32f0xx_rtc.o                        #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_spi.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM3205 #
+#                    18-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518 #
+#                    -EVAL-CONFIG1\Obj\stm32f0xx_syscfg.o                     #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_tim.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM3205 #
+#                    18-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518 #
+#                    -EVAL-CONFIG1\Obj\stm32f0xx_usart.o                      #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \stm32f0xx_wwdg.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM320 #
+#                    518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM32051 #
+#                    8-EVAL-CONFIG1\Obj\storage.o                             #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \system_stm32f0xx.o D:\vyvoj\STM\STM32F051R8T6\TEST\STM3 #
+#                    20518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320 #
+#                    518-EVAL-CONFIG1\Obj\time_date.o                         #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj #
+#                    \waveplayer.o --redirect _Printf=_PrintfSmall            #
+#                    --redirect _Scanf=_ScanfSmall -o                         #
+#                    D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1 #
+#                    \Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Exe #
+#                    \STM32F0518-EVAL.out --map D:\vyvoj\STM\STM32F051R8T6\TE #
+#                    ST\STM320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM #
+#                    \STM320518-EVAL-CONFIG1\List\STM32F0518-EVAL.map         #
+#                    --config D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_ #
+#                    FW_V1.0.1\Project\STM320518-EVAL\EWARM\stm32f0xx_flash.i #
+#                    cf --semihosting --entry __iar_program_start --vfe       #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xc0
+  .intvec            ro code  0x08000000    0xc0  startup_stm32f0xx.o [1]
+                            - 0x080000c0    0xc0
+
+"P1":                                     0x5188
+  .rodata            const    0x080000c0  0x14c8  lcd_fonts.o [1]
+  .text              ro code  0x08001588   0xe2c  ff.o [1]
+  .text              ro code  0x080023b4    0x60  ABImemset.o [5]
+  .text              ro code  0x08002414    0x40  diskio.o [1]
+  .text              ro code  0x08002454    0x56  I32DivMod.o [5]
+  .text              ro code  0x080024aa    0x2a  zero_init3.o [5]
+  .text              ro code  0x080024d4   0x224  stm320518_eval_spi_sd.o [1]
+  .text              ro code  0x080026f8     0x2  IntDivZer.o [5]
+  .text              ro code  0x080026fa     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080026fc    0xcc  stm320518_eval.o [1]
+  .text              ro code  0x080027c8    0xa2  stm32f0xx_gpio.o [1]
+  .text              ro code  0x0800286a     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800286c    0x9a  stm32f0xx_spi.o [1]
+  .text              ro code  0x08002906     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08002908   0x298  stm32f0xx_rcc.o [1]
+  .text              ro code  0x08002ba0   0x4e0  lasertag.o [1]
+  .text              ro code  0x08003080   0x498  stm32f0xx_tim.o [1]
+  .text              ro code  0x08003518    0x54  stm32f0xx_misc.o [1]
+  .text              ro code  0x0800356c   0x438  ir_lasertag.o [1]
+  .text              ro code  0x080039a4   0x418  waveplayer.o [1]
+  .text              ro code  0x08003dbc   0x408  i2c_ssd1306.o [1]
+  .text              ro code  0x080041c4   0x1b4  main.o [1]
+  .text              ro code  0x08004378   0x35c  stm32f0xx_rtc.o [1]
+  .text              ro code  0x080046d4   0x148  stm32f0xx_dma.o [1]
+  .text              ro code  0x0800481c    0x80  stm32f0xx_dac.o [1]
+  .text              ro code  0x0800489c    0xca  stm32f0xx_i2c.o [1]
+  .text              ro code  0x08004966     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x08004968   0x12c  io.o [1]
+  .text              ro code  0x08004a94   0x154  time_date.o [1]
+  .text              ro code  0x08004be8    0xbc  stm32f0xx_adc.o [1]
+  .text              ro code  0x08004ca4     0xc  stm32f0xx_crc.o [1]
+  .text              ro code  0x08004cb0    0x28  stm32f0xx_syscfg.o [1]
+  .text              ro code  0x08004cd8    0x88  stm32f0xx_exti.o [1]
+  .text              ro code  0x08004d60    0x20  stm32f0xx_pwr.o [1]
+  .text              ro code  0x08004d80   0x1dc  stm32f0xx_it.o [1]
+  .text              ro code  0x08004f5c    0xf0  system_stm32f0xx.o [1]
+  .text              ro code  0x0800504c    0xba  packbits_init.o [5]
+  .text              ro code  0x08005106     0xa  abort.o [3]
+  .text              ro code  0x08005110    0x14  exit.o [6]
+  .text              ro code  0x08005124    0x28  data_init.o [5]
+  .iar.init_table    const    0x0800514c    0x2c  - Linker created -
+  .text              ro code  0x08005178    0x16  cmain.o [5]
+  .text              ro code  0x0800518e     0x4  low_level_init.o [3]
+  .text              ro code  0x08005192     0x8  exit.o [3]
+  .text              ro code  0x0800519a     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x0800519c     0xa  cexit.o [5]
+  .text              ro code  0x080051a6     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051a8    0x10  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051b8     0xc  cstartup_M.o [5]
+  .text              ro code  0x080051c4     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051c6     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051c8     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051ca     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051cc     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051ce     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051d0     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051d2     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051d4     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051d6     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051d8     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051da     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051dc     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051de     0x2  startup_stm32f0xx.o [1]
+  .text              ro code  0x080051e0     0x2  startup_stm32f0xx.o [1]
+  .rodata            const    0x080051e2     0x0  zero_init3.o [5]
+  .rodata            const    0x080051e2     0x0  packbits_init.o [5]
+  Initializer bytes  ro data  0x080051e2    0x63  <for P2 s0>
+                            - 0x08005245  0x5185
+
+"P2", part 1 of 3:                         0x8e0
+  P2 s0                       0x20000000   0x8e0  <Init block>
+    .data            inited   0x20000000   0x884  waveplayer.o [1]
+    .data            inited   0x20000884    0x19  lasertag.o [1]
+    .data            inited   0x200008a0    0x14  system_stm32f0xx.o [1]
+    .data            inited   0x200008b4    0x10  stm32f0xx_rcc.o [1]
+    .data            inited   0x200008c4     0xc  ir_lasertag.o [1]
+    .data            inited   0x200008d0     0x8  lcd_fonts.o [1]
+    .data            inited   0x200008d8     0x8  lcd_fonts.o [1]
+                            - 0x200008e0   0x8e0
+
+"P2", part 2 of 3:                         0x480
+  .bss               zero     0x200008e0   0x400  i2c_ssd1306.o [1]
+  .bss               zero     0x20000ce0    0x24  ir_lasertag.o [1]
+  .bss               zero     0x20000d04    0x18  time_date.o [1]
+  .bss               zero     0x20000d1c    0x14  lasertag.o [1]
+  .bss               zero     0x20000d30     0x8  ff.o [1]
+  .bss               zero     0x20000d38     0x8  i2c_ssd1306.o [1]
+  .bss               zero     0x20000d40     0x8  stm32f0xx_it.o [1]
+  .bss               zero     0x20000d48     0x4  main.o [1]
+  .bss               zero     0x20000d4c     0x4  main.o [1]
+  .bss               zero     0x20000d50     0x4  stm32f0xx_it.o [1]
+  .bss               zero     0x20000d54     0x4  stm32f0xx_it.o [1]
+  .bss               zero     0x20000d58     0x4  time_date.o [1]
+  .bss               zero     0x20000d5c     0x1  stm32f0xx_it.o [1]
+                            - 0x20000d5d   0x47d
+
+"P2", part 3 of 3:                         0x400
+  CSTACK                      0x20000d60   0x400  <Block>
+    CSTACK           uninit   0x20000d60   0x400  <Block tail>
+                            - 0x20001160   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x47d:
+          0x200008e0  0x47d
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x63 (4% of destination):
+          0x080051e2   0x63
+    1 destination range, total size 0x8e0:
+          0x20000000  0x8e0
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                   ro code  ro data  rw data
+    ------                   -------  -------  -------
+D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj: [1]
+    diskio.o                      64
+    ff.o                       3 628                 8
+    i2c_ssd1306.o              1 032             1 032
+    io.o                         300
+    ir_lasertag.o              1 080        1       48
+    lasertag.o                 1 248        2       45
+    lcd_fonts.o                         5 321       16
+    main.o                       436                 8
+    startup_stm32f0xx.o          250
+    stm320518_eval.o             204
+    stm320518_eval_spi_sd.o      548
+    stm32f0xx_adc.o              188
+    stm32f0xx_crc.o               12
+    stm32f0xx_dac.o              128
+    stm32f0xx_dma.o              328
+    stm32f0xx_exti.o             136
+    stm32f0xx_gpio.o             162
+    stm32f0xx_i2c.o              202
+    stm32f0xx_it.o               476                17
+    stm32f0xx_misc.o              84
+    stm32f0xx_pwr.o               32
+    stm32f0xx_rcc.o              664                16
+    stm32f0xx_rtc.o              860
+    stm32f0xx_spi.o              154
+    stm32f0xx_syscfg.o            40
+    stm32f0xx_tim.o            1 176
+    system_stm32f0xx.o           240        1       20
+    time_date.o                  340                28
+    waveplayer.o               1 048       94    2 180
+    --------------------------------------------------
+    Total:                    15 060    5 419    3 418
+
+command line: [2]
+    --------------------------------------------------
+    Total:
+
+dl6M_tlf.a: [3]
+    abort.o                       10
+    exit.o                         8
+    low_level_init.o               4
+    --------------------------------------------------
+    Total:                        22
+
+m6M_tl.a: [4]
+    --------------------------------------------------
+    Total:
+
+rt6M_tl.a: [5]
+    ABImemset.o                   96
+    I32DivMod.o                   86
+    IntDivZer.o                    2
+    cexit.o                       10
+    cmain.o                       22
+    cstartup_M.o                  12
+    data_init.o                   40
+    packbits_init.o              186
+    zero_init3.o                  42
+    --------------------------------------------------
+    Total:                       496
+
+shb_l.a: [6]
+    exit.o                        20
+    --------------------------------------------------
+    Total:                        20
+
+    Gaps                                             3
+    Linker created                         44    1 024
+------------------------------------------------------
+    Grand Total:              15 598    5 463    4 445
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x08005179         Code  Gb  cmain.o [5]
+ADC1_COMP_IRQHandler    0x080051c9         Code  Wk  startup_stm32f0xx.o [1]
+ADC_ChannelConfig       0x08004c55    0xa  Code  Gb  stm32f0xx_adc.o [1]
+ADC_ClearFlag           0x08004ca1    0x4  Code  Gb  stm32f0xx_adc.o [1]
+ADC_Cmd                 0x08004c2b   0x12  Code  Gb  stm32f0xx_adc.o [1]
+ADC_DeInit              0x08004be9   0x1e  Code  Gb  stm32f0xx_adc.o [1]
+ADC_GetConversionValue  0x08004c69    0x6  Code  Gb  stm32f0xx_adc.o [1]
+ADC_GetFlagStatus       0x08004c6f   0x1a  Code  Gb  stm32f0xx_adc.o [1]
+ADC_Init                0x08004c07   0x24  Code  Gb  stm32f0xx_adc.o [1]
+ADC_StartOfConversion   0x08004c5f    0xa  Code  Gb  stm32f0xx_adc.o [1]
+ADC_TempSensorCmd       0x08004c3d   0x18  Code  Gb  stm32f0xx_adc.o [1]
+AHBPrescTable           0x200008a0   0x10  Data  Gb  system_stm32f0xx.o [1]
+APBAHBPrescTable        0x200008b4   0x10  Data  Lc  stm32f0xx_rcc.o [1]
+Add_Ammo                0x08002f53   0x18  Code  Gb  lasertag.o [1]
+Add_Health              0x08002f71   0x16  Code  Gb  lasertag.o [1]
+Admin_Kill              0x08002f31   0x10  Code  Gb  lasertag.o [1]
+Buffer1                 0x20000254  0x200  Data  Gb  waveplayer.o [1]
+Buffer2                 0x20000454  0x200  Data  Gb  waveplayer.o [1]
+BytesRead               0x20000250    0x4  Data  Gb  waveplayer.o [1]
+CEC_IRQHandler          0x080051e1         Code  Wk  startup_stm32f0xx.o [1]
+CRC_CalcCRC             0x08004ca5    0x8  Code  Gb  stm32f0xx_crc.o [1]
+CSTACK$$Base            0x20000d60          --   Gb  - Linker created -
+CSTACK$$Limit           0x20001160          --   Gb  - Linker created -
+CaptureNumber           0x20000d14    0x4  Data  Gb  time_date.o [1]
+Command                 0x08002f19   0x18  Code  Gb  lasertag.o [1]
+DAC_Cmd                 0x08004863   0x18  Code  Gb  stm32f0xx_dac.o [1]
+DAC_DMACmd              0x0800487b   0x1a  Code  Gb  stm32f0xx_dac.o [1]
+DAC_DeInit              0x0800481d   0x18  Code  Gb  stm32f0xx_dac.o [1]
+DAC_Init                0x08004835   0x22  Code  Gb  stm32f0xx_dac.o [1]
+DAC_StructInit          0x08004857    0xc  Code  Gb  stm32f0xx_dac.o [1]
+DMA1_Channel1_IRQHandler
+                        0x080051c5         Code  Wk  startup_stm32f0xx.o [1]
+DMA1_Channel2_3_IRQHandler
+                        0x08004f49   0x14  Code  Gb  stm32f0xx_it.o [1]
+DMA1_Channel4_5_IRQHandler
+                        0x080051c7         Code  Wk  startup_stm32f0xx.o [1]
+DMA_Cmd                 0x080047a9   0x14  Code  Gb  stm32f0xx_dma.o [1]
+DMA_DeInit              0x080046d5   0x9e  Code  Gb  stm32f0xx_dma.o [1]
+DMA_GetITStatus         0x080047cf    0x2  Code  Gb  stm32f0xx_dma.o [1]
+DMA_ITConfig            0x080047bd   0x12  Code  Gb  stm32f0xx_dma.o [1]
+DMA_Init                0x08004773   0x36  Code  Gb  stm32f0xx_dma.o [1]
+Delay                   0x08004201   0x1a  Code  Gb  main.o [1]
+Demo_DecrementTimingDelay
+                        0x08004341   0x10  Code  Gb  main.o [1]
+EXTI0_1_IRQHandler      0x08004da7   0x54  Code  Gb  stm32f0xx_it.o [1]
+EXTI2_3_IRQHandler      0x0800519b         Code  Wk  startup_stm32f0xx.o [1]
+EXTI4_15_IRQHandler     0x08004dfb    0x2  Code  Gb  stm32f0xx_it.o [1]
+EXTI_ClearITPendingBit  0x08004d51    0x6  Code  Gb  stm32f0xx_exti.o [1]
+EXTI_GetITStatus        0x08004d3f    0x2  Code  Gb  stm32f0xx_exti.o [1]
+EXTI_Init               0x08004cd9   0x66  Code  Gb  stm32f0xx_exti.o [1]
+F                       0x2000002c  0x224  Data  Gb  waveplayer.o [1]
+FLASH_IRQHandler        0x08002907         Code  Wk  startup_stm32f0xx.o [1]
+FatFs                   0x20000d34    0x4  Data  Lc  ff.o [1]
+Fire_Redy               0x2000089c    0x1  Data  Gb  lasertag.o [1]
+Fsid                    0x20000d30    0x2  Data  Lc  ff.o [1]
+GPIO_Init               0x080027c9   0x6a  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_PinAFConfig        0x0800284b   0x20  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_ReadInputDataBit   0x08002833    0x8  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_ResetBits          0x08002847    0x4  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_SetBits            0x08002843    0x4  Code  Gb  stm32f0xx_gpio.o [1]
+HardFault_Handler       0x08004d83    0x2  Code  Gb  stm32f0xx_it.o [1]
+I2C1_IRQHandler         0x080051d5         Code  Wk  startup_stm32f0xx.o [1]
+I2C2_IRQHandler         0x080051d7         Code  Wk  startup_stm32f0xx.o [1]
+I2C_ClearFlag           0x08004963    0x4  Code  Gb  stm32f0xx_i2c.o [1]
+I2C_Cmd                 0x080048f5   0x16  Code  Gb  stm32f0xx_i2c.o [1]
+I2C_GenerateSTOP        0x0800490b   0x16  Code  Gb  stm32f0xx_i2c.o [1]
+I2C_GetFlagStatus       0x08004955    0xe  Code  Gb  stm32f0xx_i2c.o [1]
+I2C_Init                0x0800489d   0x58  Code  Gb  stm32f0xx_i2c.o [1]
+I2C_SSD1306_DrawPixel   0x08004011   0x3a  Code  Gb  i2c_ssd1306.o [1]
+I2C_SSD1306_Fill        0x08003ff9   0x18  Code  Gb  i2c_ssd1306.o [1]
+I2C_SSD1306_GotoXY      0x0800404b    0x8  Code  Gb  i2c_ssd1306.o [1]
+I2C_SSD1306_Init        0x08003e21  0x132  Code  Gb  i2c_ssd1306.o [1]
+I2C_SSD1306_Putc        0x08004053   0x82  Code  Gb  i2c_ssd1306.o [1]
+I2C_SSD1306_Putd        0x080040e1   0xb4  Code  Gb  i2c_ssd1306.o [1]
+I2C_SSD1306_Puts        0x080041a1   0x24  Code  Gb  i2c_ssd1306.o [1]
+I2C_SSD1306_UpdateScreen
+                        0x08003f53   0xa6  Code  Gb  i2c_ssd1306.o [1]
+I2C_SendData            0x08004951    0x4  Code  Gb  stm32f0xx_i2c.o [1]
+I2C_TransferHandling    0x08004921   0x1c  Code  Gb  stm32f0xx_i2c.o [1]
+ICValue1                0x20000d54    0x4  Data  Gb  stm32f0xx_it.o [1]
+IRFrameReceived         0x20000ce8    0x1  Data  Gb  ir_lasertag.o [1]
+IRHeaderLowMax          0x20000cf6    0x2  Data  Gb  ir_lasertag.o [1]
+IRHeaderLowMin          0x20000cf4    0x2  Data  Gb  ir_lasertag.o [1]
+IRHeaderWholeMax        0x20000cfa    0x2  Data  Gb  ir_lasertag.o [1]
+IRHeaderWholeMin        0x20000cf8    0x2  Data  Gb  ir_lasertag.o [1]
+IROnTimeMax             0x20000cec    0x2  Data  Gb  ir_lasertag.o [1]
+IROnTimeMin             0x20000cea    0x2  Data  Gb  ir_lasertag.o [1]
+IRTimeOut               0x20000cfc    0x2  Data  Gb  ir_lasertag.o [1]
+IRTmpPacket             0x20000ce0    0x8  Data  Gb  ir_lasertag.o [1]
+IRValue00               0x20000cf2    0x2  Data  Gb  ir_lasertag.o [1]
+IRValueMargin           0x20000cf0    0x2  Data  Gb  ir_lasertag.o [1]
+IRValueStep             0x20000cee    0x2  Data  Gb  ir_lasertag.o [1]
+IR_BitsSent_Counter     0x200008c7    0x1  Data  Gb  ir_lasertag.o [1]
+IR_DataSampling         0x080038c9   0x82  Code  Gb  ir_lasertag.o [1]
+IR_Decode_Init          0x0800373f  0x17a  Code  Gb  ir_lasertag.o [1]
+IR_Encode_Init          0x0800356d   0xf6  Code  Gb  ir_lasertag.o [1]
+IR_Encode_SignalGenerate
+                        0x080036b9   0x86  Code  Gb  ir_lasertag.o [1]
+IR_Encode_Start         0x08003663   0x56  Code  Gb  ir_lasertag.o [1]
+IR_Frame                0x200008cc    0x4  Data  Gb  ir_lasertag.o [1]
+IR_Pulse                0x200008c8    0x1  Data  Gb  ir_lasertag.o [1]
+IR_ResetPacket          0x0800396d   0x22  Code  Gb  ir_lasertag.o [1]
+IR_Send_Counter         0x200008c4    0x1  Data  Gb  ir_lasertag.o [1]
+IR_Send_Operation_Completed_f
+                        0x200008c6    0x1  Data  Gb  ir_lasertag.o [1]
+IR_Send_Operation_Ready_f
+                        0x200008c5    0x1  Data  Gb  ir_lasertag.o [1]
+IR_ShotPocket_Calc      0x08002c4b   0x20  Code  Gb  lasertag.o [1]
+IR_Timer_Overflow       0x0800394b   0x1c  Code  Gb  ir_lasertag.o [1]
+InStream_Read           0x0800504d   0x22  Code  Lc  packbits_init.o [5]
+Input_Init              0x08004977   0xc2  Code  Gb  io.o [1]
+Lasertag_DecodeData     0x08002d81  0x190  Code  Gb  lasertag.o [1]
+Lasertag_Fire_Timer     0x08002d11   0x52  Code  Gb  lasertag.o [1]
+Lasertag_Init           0x08002ba1   0x64  Code  Gb  lasertag.o [1]
+Lasertag_Init_default   0x08002c05   0x46  Code  Gb  lasertag.o [1]
+Lasertag_LCD_Update     0x08002f8d   0xb0  Code  Gb  lasertag.o [1]
+LsiFreq                 0x20000d10    0x4  Data  Gb  time_date.o [1]
+MSec                    0x20000d4c    0x4  Data  Gb  main.o [1]
+NMI_Handler             0x08004d81    0x2  Code  Gb  stm32f0xx_it.o [1]
+NVIC_EnableIRQ          0x08004969    0xe  Code  Lc  io.o [1]
+NVIC_Init               0x08003519   0x48  Code  Gb  stm32f0xx_misc.o [1]
+NVIC_SetPriority        0x080041c5   0x3a  Code  Lc  main.o [1]
+New_Game                0x08002f41   0x12  Code  Gb  lasertag.o [1]
+Output_Init             0x08004a39   0x48  Code  Gb  io.o [1]
+Output_Toggle           0x08004a8d    0x8  Code  Gb  io.o [1]
+PVD_IRQHandler          0x0800286b         Code  Wk  startup_stm32f0xx.o [1]
+PWR_BackupAccessCmd     0x08004d61   0x16  Code  Gb  stm32f0xx_pwr.o [1]
+PendSV_Handler          0x08004d87    0x2  Code  Gb  stm32f0xx_it.o [1]
+PeriodValue             0x20000d18    0x4  Data  Gb  time_date.o [1]
+RCC_ADCCLKConfig        0x08002937   0x24  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_AHBPeriphClockCmd   0x08002ad5   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x08002afd   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB1PeriphResetCmd  0x08002b29   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08002ae9   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphResetCmd  0x08002b11   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetClocksFreq       0x08002961  0x14a  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetFlagStatus       0x08002b41   0x2a  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_HSI14Cmd            0x0800290f    0xc  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_IRQHandler          0x08004967         Code  Wk  startup_stm32f0xx.o [1]
+RCC_LSICmd              0x0800292b    0xc  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_RTCCLKCmd           0x08002ab9   0x18  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_RTCCLKConfig        0x08002aad    0x6  Code  Gb  stm32f0xx_rcc.o [1]
+RTC_AlarmCmd            0x080045b9   0x48  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_AlarmSubSecondConfig
+                        0x08004601   0x16  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_Bcd2ToByte          0x080046c5   0x10  Code  Lc  stm32f0xx_rtc.o [1]
+RTC_ByteToBcd2          0x080046af   0x16  Code  Lc  stm32f0xx_rtc.o [1]
+RTC_ClearITPendingBit   0x08004691   0x10  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_Config              0x08004a95   0xd8  Code  Lc  time_date.o [1]
+RTC_EnterInitMode       0x080043bb   0x36  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_GetITStatus         0x08004661   0x2c  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_GetTime             0x080044d7   0x3e  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_IRQHandler          0x08004e5f   0x2a  Code  Gb  stm32f0xx_it.o [1]
+RTC_ITConfig            0x0800462d   0x32  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_Init                0x08004379   0x42  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_InitStructure       0x20000d04    0xc  Data  Gb  time_date.o [1]
+RTC_SetAlarm            0x08004521   0x92  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_SetTime             0x0800443d   0x9a  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_WaitForSynchro      0x080043f1   0x44  Code  Gb  stm32f0xx_rtc.o [1]
+ReadUnit                0x08003d99   0x24  Code  Gb  waveplayer.o [1]
+Region$$Table$$Base     0x0800514c          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08005178          --   Gb  - Linker created -
+Reloading_press         0x08002cb5   0x2c  Code  Gb  lasertag.o [1]
+Reloading_timer         0x08002ce1   0x30  Code  Gb  lasertag.o [1]
+Reset_Handler           0x080051a9         Code  Wk  startup_stm32f0xx.o [1]
+SD_GetDataResponse      0x080025e5   0x2a  Code  Gb  stm320518_eval_spi_sd.o [1]
+SD_GetResponse          0x0800260f   0x22  Code  Gb  stm320518_eval_spi_sd.o [1]
+SD_GoIdleState          0x08002631   0x60  Code  Gb  stm320518_eval_spi_sd.o [1]
+SD_Init                 0x080024d5   0x20  Code  Gb  stm320518_eval_spi_sd.o [1]
+SD_LowLevel_Init        0x080026fd   0xc2  Code  Gb  stm320518_eval.o [1]
+SD_ReadBlock            0x080024f5   0x50  Code  Gb  stm320518_eval_spi_sd.o [1]
+SD_ReadByte             0x080026bf   0x2c  Code  Gb  stm320518_eval_spi_sd.o [1]
+SD_SendCmd              0x080025b9   0x2c  Code  Gb  stm320518_eval_spi_sd.o [1]
+SD_WriteBlock           0x08002545   0x58  Code  Gb  stm320518_eval_spi_sd.o [1]
+SD_WriteByte            0x08002691   0x2e  Code  Gb  stm320518_eval_spi_sd.o [1]
+SPI1_IRQHandler         0x080051d9         Code  Wk  startup_stm32f0xx.o [1]
+SPI2_IRQHandler         0x080051db         Code  Wk  startup_stm32f0xx.o [1]
+SPI_Cmd                 0x080028b5   0x14  Code  Gb  stm32f0xx_spi.o [1]
+SPI_I2S_GetFlagStatus   0x080028f9    0xe  Code  Gb  stm32f0xx_spi.o [1]
+SPI_Init                0x0800286d   0x48  Code  Gb  stm32f0xx_spi.o [1]
+SPI_ReceiveData8        0x080028d3    0x4  Code  Gb  stm32f0xx_spi.o [1]
+SPI_RxFIFOThresholdConfig
+                        0x080028c9    0x6  Code  Gb  stm32f0xx_spi.o [1]
+SPI_SendData8           0x080028cf    0x4  Code  Gb  stm32f0xx_spi.o [1]
+SSD1306                 0x20000d38    0x8  Data  Lc  i2c_ssd1306.o [1]
+SSD1306_Buffer          0x200008e0  0x400  Data  Lc  i2c_ssd1306.o [1]
+SSD1306_WRITECOMMAND    0x08003dbd   0x64  Code  Lc  i2c_ssd1306.o [1]
+SVC_Handler             0x08004d85    0x2  Code  Gb  stm32f0xx_it.o [1]
+SYSCFG_EXTILineConfig   0x08004cb1   0x24  Code  Gb  stm32f0xx_syscfg.o [1]
+SpeechDataOffset        0x20000024    0x4  Data  Lc  waveplayer.o [1]
+SysTick_Handler         0x08004d89   0x1e  Code  Gb  stm32f0xx_it.o [1]
+SysTick_Init            0x0800424b   0x3c  Code  Gb  main.o [1]
+SystemCoreClock         0x200008b0    0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit              0x08004f5d   0xd0  Code  Gb  system_stm32f0xx.o [1]
+TI1_Config              0x08003485   0x28  Code  Lc  stm32f0xx_tim.o [1]
+TI2_Config              0x080034b9   0x2c  Code  Lc  stm32f0xx_tim.o [1]
+TIM14_IC1ReadValue1     0x20000d40    0x4  Data  Gb  stm32f0xx_it.o [1]
+TIM14_IC1ReadValue2     0x20000d44    0x4  Data  Gb  stm32f0xx_it.o [1]
+TIM14_IRQHandler        0x08004dfd   0x62  Code  Gb  stm32f0xx_it.o [1]
+TIM15_IRQHandler        0x08004e89   0x10  Code  Gb  stm32f0xx_it.o [1]
+TIM16_IRQHandler        0x08004e99   0x10  Code  Gb  stm32f0xx_it.o [1]
+TIM17_IRQHandler        0x080051d3         Code  Wk  startup_stm32f0xx.o [1]
+TIM1_BRK_UP_TRG_COM_IRQHandler
+                        0x080051cb         Code  Wk  startup_stm32f0xx.o [1]
+TIM1_CC_IRQHandler      0x080051cd         Code  Wk  startup_stm32f0xx.o [1]
+TIM2_IRQHandler         0x08004ea9   0x72  Code  Gb  stm32f0xx_it.o [1]
+TIM3_IRQHandler         0x080051cf         Code  Wk  startup_stm32f0xx.o [1]
+TIM6ARRValue            0x2000001c    0x2  Data  Gb  waveplayer.o [1]
+TIM6_DAC_IRQHandler     0x080051d1         Code  Wk  startup_stm32f0xx.o [1]
+TIMCLKValueKHz          0x20000d00    0x4  Data  Lc  ir_lasertag.o [1]
+TIM_ClearFlag           0x0800342b    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_ClearITPendingBit   0x08003447    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_Cmd                 0x080031b5   0x14  Code  Gb  stm32f0xx_tim.o [1]
+TIM_CtrlPWMOutputs      0x080031d1   0x22  Code  Gb  stm32f0xx_tim.o [1]
+TIM_DeInit              0x08003081   0xac  Code  Gb  stm32f0xx_tim.o [1]
+TIM_ForcedOC1Config     0x0800327d    0x8  Code  Gb  stm32f0xx_tim.o [1]
+TIM_GetCapture1         0x080033bf    0x4  Code  Gb  stm32f0xx_tim.o [1]
+TIM_GetCapture2         0x080033c3    0x4  Code  Gb  stm32f0xx_tim.o [1]
+TIM_GetFlagStatus       0x0800341d    0xe  Code  Gb  stm32f0xx_tim.o [1]
+TIM_GetITStatus         0x08003431   0x16  Code  Gb  stm32f0xx_tim.o [1]
+TIM_ICInit              0x080032b5   0x9e  Code  Gb  stm32f0xx_tim.o [1]
+TIM_ITConfig            0x0800340b   0x12  Code  Gb  stm32f0xx_tim.o [1]
+TIM_OC1Init             0x080031f3   0x64  Code  Gb  stm32f0xx_tim.o [1]
+TIM_OC1PreloadConfig    0x08003285    0x8  Code  Gb  stm32f0xx_tim.o [1]
+TIM_PWMIConfig          0x08003355   0x6a  Code  Gb  stm32f0xx_tim.o [1]
+TIM_PrescalerConfig     0x08003197    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_RemapConfig         0x0800347f    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SelectInputTrigger  0x0800344d    0xc  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SelectMasterSlaveMode
+                        0x08003479    0x6  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SelectOutputTrigger
+                        0x08003459   0x10  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SelectSlaveMode     0x08003469    0x4  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SetAutoreload       0x0800319d    0x4  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SetIC1Prescaler     0x080033c7    0xc  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SetIC2Prescaler     0x080033d9    0xa  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SetIC3Prescaler     0x080033eb    0xc  Code  Gb  stm32f0xx_tim.o [1]
+TIM_SetIC4Prescaler     0x080033f9    0xa  Code  Gb  stm32f0xx_tim.o [1]
+TIM_TimeBaseInit        0x0800312d   0x58  Code  Gb  stm32f0xx_tim.o [1]
+TIM_TimeBaseStructInit  0x08003185   0x12  Code  Gb  stm32f0xx_tim.o [1]
+TIM_UpdateRequestConfig
+                        0x080031a1   0x14  Code  Gb  stm32f0xx_tim.o [1]
+TM_Font11x18            0x0800082c  0xd5c  Data  Gb  lcd_fonts.o [1]
+TM_Font7x10             0x080000c0  0x76c  Data  Gb  lcd_fonts.o [1]
+TM_Font_11x18           0x200008d8    0x8  Data  Gb  lcd_fonts.o [1]
+TM_Font_7x10            0x200008d0    0x8  Data  Gb  lcd_fonts.o [1]
+TS_IRQHandler           0x080051a7         Code  Wk  startup_stm32f0xx.o [1]
+Time_Date_Init          0x08004b6d   0x6a  Code  Gb  time_date.o [1]
+Time_Date_Time          0x20000d58    0x4  Data  Gb  time_date.o [1]
+TimingDelay             0x20000d48    0x4  Data  Lc  main.o [1]
+Trigger_Press           0x08002c6d   0x48  Code  Gb  lasertag.o [1]
+USART1_IRQHandler       0x080051dd         Code  Wk  startup_stm32f0xx.o [1]
+USART2_IRQHandler       0x080051df         Code  Wk  startup_stm32f0xx.o [1]
+WAVE_Format             0x20000004   0x18  Data  Gb  waveplayer.o [1]
+WWDG_IRQHandler         0x080026fb         Code  Wk  startup_stm32f0xx.o [1]
+WaveCounter             0x20000d50    0x4  Data  Gb  stm32f0xx_it.o [1]
+WaveDataLength          0x20000020    0x4  Data  Gb  waveplayer.o [1]
+WaveFileStatus          0x20000000    0x1  Data  Lc  waveplayer.o [1]
+WavePlayer_Init         0x080039a5   0xce  Code  Gb  waveplayer.o [1]
+WavePlayer_WaveParsing  0x08003a81  0x1c2  Code  Lc  waveplayer.o [1]
+Wave_Player_Play        0x08003c49   0x32  Code  Gb  waveplayer.o [1]
+Wave_Player_Play_Handler
+                        0x08003c85   0xce  Code  Gb  waveplayer.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20001fff          --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000          --   Gb  command line/config [2]
+__aeabi_idiv            0x08002455         Code  Gb  I32DivMod.o [5]
+__aeabi_idiv0           0x080026f9         Code  Gb  IntDivZer.o [5]
+__aeabi_idivmod         0x08002455         Code  Gb  I32DivMod.o [5]
+__aeabi_memset          0x080023b5         Code  Gb  ABImemset.o [5]
+__aeabi_memset4         0x080023d5         Code  Gb  ABImemset.o [5]
+__aeabi_memset8         0x080023d5         Code  Gb  ABImemset.o [5]
+__aeabi_uidiv           0x0800247d         Code  Gb  I32DivMod.o [5]
+__aeabi_uidivmod        0x0800247d         Code  Gb  I32DivMod.o [5]
+__cmain                 0x08005179         Code  Gb  cmain.o [5]
+__exit                  0x08005111   0x14  Code  Gb  exit.o [6]
+__iar_Memset4_word      0x080023e1         Code  Gb  ABImemset.o [5]
+__iar_Memset_word       0x080023c1         Code  Gb  ABImemset.o [5]
+__iar_data_init3        0x08005125   0x28  Code  Gb  data_init.o [5]
+__iar_packbits_init3    0x0800506f   0x98  Code  Gb  packbits_init.o [5]
+__iar_program_start     0x080051b9         Code  Gb  cstartup_M.o [5]
+__iar_zero_init3        0x080024ab   0x2a  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800518f    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f0xx.o [1]
+_call_main              0x08005185         Code  Gb  cmain.o [5]
+_exit                   0x0800519d         Code  Gb  cexit.o [5]
+_main                   0x0800518b         Code  Gb  cmain.o [5]
+abort                   0x08005107    0xa  Code  Gb  abort.o [3]
+buffer_active           0x20000001    0x1  Data  Lc  waveplayer.o [1]
+check_fs                0x08001cf3   0x60  Code  Lc  ff.o [1]
+chk_mounted             0x08001d59  0x2d8  Code  Lc  ff.o [1]
+clust2sect              0x0800161d   0x18  Code  Gb  ff.o [1]
+create_chain            0x08001869   0xa2  Code  Lc  ff.o [1]
+create_name             0x08001ae9  0x130  Code  Lc  ff.o [1]
+dir_next                0x08001997   0xee  Code  Lc  ff.o [1]
+dir_register            0x08001a85   0x62  Code  Lc  ff.o [1]
+dir_sdi                 0x08001915   0x82  Code  Lc  ff.o [1]
+disk_initialize         0x08002415    0x8  Code  Gb  diskio.o [1]
+disk_read               0x08002425   0x14  Code  Gb  diskio.o [1]
+disk_status             0x0800241d    0x8  Code  Gb  diskio.o [1]
+disk_write              0x08002439   0x14  Code  Gb  diskio.o [1]
+exit                    0x08005193    0x8  Code  Gb  exit.o [3]
+f_mount                 0x08002061   0x20  Code  Gb  ff.o [1]
+f_open                  0x080020c5  0x18e  Code  Gb  ff.o [1]
+f_read                  0x08002253  0x162  Code  Gb  ff.o [1]
+follow_path             0x08001c29   0xca  Code  Lc  ff.o [1]
+fs                      0x20000654  0x230  Data  Gb  waveplayer.o [1]
+getTrueRandomNumber     0x08004287   0xba  Code  Gb  main.o [1]
+get_fat                 0x08001635   0xda  Code  Gb  ff.o [1]
+get_fattime             0x0800244d    0x4  Code  Gb  diskio.o [1]
+gun                     0x20000884   0x18  Data  Gb  lasertag.o [1]
+main                    0x0800421b   0x30  Code  Gb  main.o [1]
+mem_cpy                 0x08001589   0x14  Code  Lc  ff.o [1]
+mem_set                 0x0800159d   0x12  Code  Lc  ff.o [1]
+move_window             0x080015af   0x6e  Code  Lc  ff.o [1]
+player                  0x20000d1c   0x10  Data  Gb  lasertag.o [1]
+put_fat                 0x0800170f   0xfc  Code  Gb  ff.o [1]
+remove_chain            0x0800180b   0x5e  Code  Lc  ff.o [1]
+tmp_damage              0x20000d2e    0x1  Data  Lc  lasertag.o [1]
+tmp_player_id           0x20000d2c    0x1  Data  Lc  lasertag.o [1]
+tmp_reloading           0x20000d2f    0x1  Data  Lc  lasertag.o [1]
+tmp_team                0x20000d2d    0x1  Data  Lc  lasertag.o [1]
+validate                0x08002039   0x28  Code  Lc  ff.o [1]
+wavelen                 0x20000028    0x4  Data  Lc  waveplayer.o [1]
+
+
+[1] = D:\vyvoj\STM\STM32F051R8T6\TEST\STM320518-EVAL_FW_V1.0.1\Project\STM320518-EVAL\EWARM\STM320518-EVAL-CONFIG1\Obj
+[2] = command line
+[3] = dl6M_tlf.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  15 598 bytes of readonly  code memory
+   5 463 bytes of readonly  data memory
+   4 445 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
